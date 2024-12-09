@@ -1,0 +1,22 @@
+1. SELECT DISTINCT imie
+FROM ludnosc
+WHERE plec = 'K';
+
+2. SELECT imie, COUNT(*) AS liczba_wystapien
+FROM ludnosc
+WHERE plec = 'M'
+GROUP BY imie
+ORDER BY liczba_wystapien DESC
+LIMIT 5;
+
+3. SELECT l.imie, COUNT(*) AS liczba_wystapien
+FROM ludnosc l
+JOIN wojewodztwa w ON l.wojewodztwo_id = w.id
+WHERE w.nazwa = 'Mazowieckie'
+GROUP BY l.imie
+ORDER BY liczba_wystapien DESC
+LIMIT 1;
+
+4. SELECT DISTINCT imie
+FROM ludnosc
+WHERE CHAR_LENGTH(imie) = 3;

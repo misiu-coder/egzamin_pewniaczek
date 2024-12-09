@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="baner.png">
+    </header>
+
+    <section id="gorny">
+        <p id="wynik"></p>
+    </section>
+
+    <section id="lewy">
+        <p>Treść neonu</p>
+        <textarea maxlength="10" id="tresc"></textarea><br>
+        <input type="submit" value="Zastosuj" id="zatwierdz" onclick="liczNeon()">
+    </section>
+
+    <section id="srodkowy">
+        <p>Kolor neonu</p>
+            R: <input type="range" min="0" max="255" id="r"><br>
+            G: <input type="range" min="0" max="255" id="g"><br>
+            B: <input type="range" min="0" max="255" id="b">
+    </section>
+
+    <section id="prawy">
+        <p>Rozmiar neonu</p>
+        <input type="number" min="0" max="300" value="100" step="5" id="rozmiar">
+    </section>
+
+    <footer>
+        <p><a href="style.css" target="_blank">Otwórz plik ze stylami css</a></p>
+        <p>Stronę wykonał: Mikołaj</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

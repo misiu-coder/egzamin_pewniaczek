@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    font-family: century, serif;
+    text-align: center;
+}
+header, footer{
+    background-color: #CCA10B;
+    color: white;
+    font-style: italic;
+    padding: 20px;
+}
+#gorny{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+#lewy, #srodkowy, #prawy{
+    width: 33.33%;
+    height: 200px;
+    background-color: rgb(226, 212, 194);
+    float: left;
+}
+#gorny p{
+    font-size: 100px;
+    color: red;
+}
+#zatwierdz{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+#zatwierdz:hover{
+    background-color: #CCA10B;
+}
+input range{
+    width: 50%;
+}
+a{
+    background-color: orange;
+    padding: 5px;
+    color: white;
+}
